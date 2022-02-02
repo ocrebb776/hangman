@@ -1,92 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" media="screen and (min-width: 1552px)" href="wide.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and (max-width: 1552px)" href="narrow.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <style>         
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-table{
-    position: absolute;
-}
-.box{
-    padding: 1vw 1vw;
-    background-color: rgb(255, 255, 255);
-    max-width: 15vw;
-    max-height: 15vw;
-    min-width: 15vw;
-    min-height: 15vw;
-    position: static;
-    font-size: 7vw;
-    color: rgb(0, 0, 0);
-    margin-left: 1vw;
-    margin-bottom: 0vh;
-    border-bottom: 0.5vw solid black;
-    font-size: 15vw;}
-.b{
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    padding: auto;
-}
-ol{
-    position: absolute;
-    margin-top: 20vw;
-    border: 1vw solid black;
-    max-height:calc(60vh-20vw);
-    min-width: 2vh;
-}
-.r{
- 
-    position: fixed;
-    left: 2.75vw;
-    bottom: 1vh;
-    text-align: center;
-    font-size: 0px;
+        <script src="index.js"></script>
 
-}
-.key {
-    width: 9vw;
-    height: 8vh;
-  margin-right: 0px;
-  margin-left: 0.5vw;
-  margin-top: 1vh;
-  border: none;
-  border-radius: 1vh;
-  font-size: 5vw;
-  color: white;
-  background-color: #818384;
-  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
-
-
-
-
-           
-      </style>
-        <script> 
-        function set(cell, press) {
-  document.getElementById(cell).innerHTML = press
-}
-let ent=['']
-        let n = 1
-function key(press) {
-  if (n < 6) {
-    press = press.toUpperCase()
-    set(String(n), press)
-    ent[n - 1] = press
-    n = n + 1
-    go(press)
-  }
-}
-        function go(item){
-            $("ol").append("<li>"+item+"</li>");
-        }
-            </script>
         </head> 
     <body><table><tr>
         <th><div class="box"><div id="1"class="b"></div></div></th>
@@ -99,6 +20,8 @@ function key(press) {
             <b>Used letters</b><br>below
 
           </ol>
+          <div class="hint">s</div>
+          <div class="img">s</div>
 
         </body>
         <div class="r">
